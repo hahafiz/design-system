@@ -7,7 +7,11 @@ function App() {
 
   return (
     <>
-      <Button></Button>
+      <Button variant="primary">Capybara</Button>
+      <Button variant="secondary">Capybara</Button>
+      <Button size="xs">Btn xs</Button>
+      <Button size="sm">Btn sm</Button>
+      <Button size="md">Btn md</Button>
     </>
   );
 }
