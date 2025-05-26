@@ -70,6 +70,7 @@ const Button = ({
   );
 };
 
+// prop validation
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   variant: PropTypes.oneOf([
