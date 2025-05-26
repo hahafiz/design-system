@@ -33,7 +33,7 @@ const Button = ({
   // size styling
   const sizeClasses = {
     xs: "py-1 px-2 text-xs",
-    sm: "py-1/5 px-3 text-sm",
+    sm: "py-1.5 px-3 text-sm",
     md: "py-2 px-4 text-sm",
     lg: "py-2.5 px-5 text-base",
     xl: "py-3 px-6 text-lg",
@@ -65,7 +65,7 @@ const Button = ({
     >
       {leftIcon && <span className="mr-2">{leftIcon}</span>}
       {children}
-      {rightIcon && <span className="mr-2">{rightIcon}</span>}
+      {rightIcon && <span className="ml-2">{rightIcon}</span>}
     </button>
   );
 };
