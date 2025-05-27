@@ -7,8 +7,13 @@ const CardDemo = () => {
       <h1 className="text-2xl font-bold mb-6">Card Component</h1>
 
       {/* Variants */}
-      <Card variant="primary" padding="md">
+      <Card variant="primary" padding="md" bordered shadow="xl">
         Test Card
+      </Card>
+      <Card variant="primary">
+        <Card.Header>
+          <Card.Title>Test Card</Card.Title>
+        </Card.Header>
       </Card>
     </div>
   );
