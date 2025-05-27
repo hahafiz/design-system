@@ -74,8 +74,16 @@ Card.Title = ({ children, className = "", ...props }) => (
   </h3>
 );
 
-Card.Body = ({ children }) => <div className="p-4">{children}</div>;
-Card.Footer = ({ children }) => <div className="p-4">{children}</div>;
+Card.Body = ({ children, className = "", ...props }) => (
+  <div className={className} {...props}>
+    {children}
+  </div>
+);
+Card.Footer = ({ children, className = "", ...props }) => (
+  <div className={`border-t border-gray-200 pt-4 mt-4 ${className}`} {...props}>
+    {children}
+  </div>
+);
 
 // prop validation
 Card.PropTypes = {
@@ -88,6 +96,21 @@ Card.PropTypes = {
 };
 
 Card.Header.PropTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+};
+
+Card.Title.PropTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+};
+
+Card.Body.PropTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+};
+
+Card.Footer.PropTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
 };

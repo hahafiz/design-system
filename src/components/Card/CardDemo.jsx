@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card.jsx";
+import Button from "../Button/Button.jsx";
 
 const CardDemo = () => {
   return (
@@ -10,10 +11,16 @@ const CardDemo = () => {
       <Card variant="primary" padding="md" bordered shadow="xl">
         Test Card
       </Card>
-      <Card variant="primary">
+      <Card variant="primary" shadow="xl">
         <Card.Header>
           <Card.Title>Test Card</Card.Title>
         </Card.Header>
+        <Card.Body>
+          <p>Compund component test</p>
+        </Card.Body>
+        <Card.Footer>
+          <Button size="sm">CTA</Button>
+        </Card.Footer>
       </Card>
     </div>
   );
