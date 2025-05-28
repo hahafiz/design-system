@@ -126,13 +126,69 @@ const CardDemo = () => {
             className="transition-all duration-300 hover:shadow-xl"
           >
             <img
-              src="https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              src="https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?q=80&w=1113&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="image"
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-cover rounded-sm"
             />
             <div className="p-4">
               <h3 className="font-bold text-lg mb-2">Premium Headphone</h3>
-              <p className="text-gray-600 mb-4">Lorem ipsum dolor sit amet</p>
+              <p className="text-gray-600 mb-4">
+                Wireless noise cancelling headphone
+              </p>
+              <div className="flex justify-between items-center">
+                <span className="font-bold text-lg">RM 299.99</span>
+                <Button size="sm" variant="primary">
+                  Add to Cart
+                </Button>
+              </div>
+            </div>
+          </Card>
+
+          <Card
+            shadow="lg"
+            className="transition-all duration-300 hover:shadow-xl"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1602025882379-e01cf08baa51?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="image"
+              className="w-full h-48 object-cover rounded-sm"
+            />
+            <div className="p-4">
+              <h3 className="font-bold text-lg mb-2">
+                Custom Mechanical Keyboard
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Hotswappable mechanical keyboard
+              </p>
+              <div className="flex justify-between items-center">
+                <span className="font-bold text-lg">RM 999.99</span>
+                <Button size="sm" variant="primary">
+                  Add to Cart
+                </Button>
+              </div>
+            </div>
+          </Card>
+
+          <Card
+            shadow="lg"
+            className="transition-all duration-300 hover:shadow-xl"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1726658045061-409d329466ab?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="image"
+              className="w-full h-48 object-cover rounded-sm"
+            />
+            <div className="p-4">
+              <h3 className="font-bold text-lg mb-2">ITX Motherboard</h3>
+              <p className="text-gray-600 mb-4">
+                Small form factor motherboard
+              </p>
+              <div className="flex justify-between items-center">
+                <span className="font-bold text-lg">RM 1,299.99</span>
+                <Button size="sm" variant="primary">
+                  Add to Cart
+                </Button>
+              </div>
             </div>
           </Card>
         </div>
