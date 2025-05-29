@@ -3,17 +3,18 @@ import PropTypes from "prop-types";
 
 const Input = ({
   type = "text",
+  id = "",
+  name = "",
+  value = "",
   placeholder = "Input",
   className = "",
   ...props
 }) => {
   // base styling
-  const baseClasses =
-    "block w-full rounded-sm border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 pl-4";
+  const baseClasses = "";
 
   // input type
   const inputType = {
-    button: "button",
     checkbox: "checkbox",
     color: "color",
     date: "date",
@@ -40,11 +41,12 @@ const Input = ({
   // combine all classes
   const inputClasses = [baseClasses, className].join(" ");
 
-  console.log(inputType[type]);
-  console.log(placeholder);
   return (
     <input
       type={inputType[type]}
+      id={id}
+      name={name}
+      value={value}
       placeholder={placeholder}
       className={inputClasses}
       {...props}
@@ -54,7 +56,12 @@ const Input = ({
 
 // prop validation
 Input.proptTypes = {
-  type: PropTypes.string,
+  type: PropTypes.string.isRequired,
+  id: PropTypes.string,
+  name: PropTypes.string,
+  value: PropTypes.string,
+  placeholder: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default Input;
