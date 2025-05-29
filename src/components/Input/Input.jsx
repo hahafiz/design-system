@@ -12,31 +12,23 @@ const Input = ({
   ...props
 }) => {
   // base styling
-  const baseClasses = "p-2 border border-gray-300 rounded-md";
+  const baseClasses = "p-2 pl-3 border border-gray-300 rounded-md";
 
   // input type
   const inputType = {
     checkbox: "checkbox",
     color: "color",
     date: "date",
-    datetime: "datetime-local",
     email: "email",
     file: "file",
-    hidden: "hidden",
     image: "image",
-    month: "month",
     number: "number",
     password: "password",
     radio: "radio",
     range: "range",
-    reset: "reset",
     search: "search",
     submit: "submit",
-    tel: "tel",
     text: "text",
-    time: "time",
-    url: "url",
-    week: "week",
   };
 
   // additional styling
