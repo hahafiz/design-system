@@ -5,13 +5,14 @@ const Input = ({
   type = "text",
   id = "",
   name = "",
-  value = "",
   placeholder = "Input",
+  disabled = false,
+  fullWidth = false,
   className = "",
   ...props
 }) => {
   // base styling
-  const baseClasses = "";
+  const baseClasses = "p-2 border border-gray-300 rounded-md";
 
   // input type
   const inputType = {
@@ -38,17 +39,28 @@ const Input = ({
     week: "week",
   };
 
+  // additional styling
+  const stateClasses = {
+    disabled: "opacity-50 cursor-not-allowed",
+    fullWidth: "w-full",
+  };
+
   // combine all classes
-  const inputClasses = [baseClasses, className].join(" ");
+  const inputClasses = [
+    baseClasses,
+    disabled ? stateClasses.disabled : "",
+    fullWidth ? stateClasses.fullWidth : "",
+    className,
+  ].join(" ");
 
   return (
     <input
       type={inputType[type]}
       id={id}
       name={name}
-      value={value}
       placeholder={placeholder}
       className={inputClasses}
+      disabled={disabled}
       {...props}
     ></input>
   );
@@ -59,7 +71,6 @@ Input.proptTypes = {
   type: PropTypes.string.isRequired,
   id: PropTypes.string,
   name: PropTypes.string,
-  value: PropTypes.string,
   placeholder: PropTypes.string,
   className: PropTypes.string,
 };

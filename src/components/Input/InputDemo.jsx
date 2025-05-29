@@ -8,9 +8,14 @@ const InputDemo = () => {
 
       <div className="space-y-4">
         <h2 className="text-xl font-semibold">Input Types</h2>
-        <div className="flex flex-col">
-          <Input type="text" placeholder="Test placeholder" />
+        <div className="flex flex-col gap-4">
+          <Input type="text" placeholder="Test tesss" />
           <Input type="checkbox" placeholder="Test placeholder" />
+          <Input
+            type="color"
+            placeholder="Color input"
+            style={{ height: "40px" }}
+          />
         </div>
       </div>
     </div>
