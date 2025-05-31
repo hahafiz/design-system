@@ -8,9 +8,15 @@ const ModalDemo = (props) => {
       <h1 className="text-2xl font-bold mb-6">Modal Component</h1>
 
       <div className="space-y-4">
-        <h2 className="text-xl font-semibold">
-          <Modal>Test Modal</Modal>
-        </h2>
+        <h2 className="text-xl font-semibold"> Test Modal</h2>
+        <Modal>Test Modal</Modal>
+        <Modal
+          variant="primary"
+          shadow="md"
+          className="hover:shadow-xl transition-all duration-300"
+        >
+          Test Modal with Variants
+        </Modal>
       </div>
     </div>
   );
