@@ -59,4 +59,16 @@ Modal.propTypes = {
   className: PropTypes.string,
 };
 
+Modal.Header = ({ children, className = "", ...props }) => (
+  <div className={`border-b border-gray-200 pb-3 mb-4 ${className}`} {...props}>
+    {children}
+  </div>
+);
+
+Modal.Title = ({ children, className = "", ...props }) => (
+  <h3 className={`text-lg font-semibold ${className}`} {...props}>
+    {children}
+  </h3>
+);
+
 export default Modal;

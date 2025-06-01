@@ -17,7 +17,6 @@ const Input = ({
   // input type
   const inputType = {
     checkbox: "checkbox",
-    color: "color",
     date: "date",
     email: "email",
     file: "file",

@@ -9,14 +9,21 @@ const ModalDemo = (props) => {
 
       <div className="space-y-4">
         <h2 className="text-xl font-semibold"> Test Modal</h2>
-        <Modal>Test Modal</Modal>
-        <Modal
-          variant="primary"
-          shadow="md"
-          className="hover:shadow-xl transition-all duration-300"
-        >
-          Test Modal with Variants
-        </Modal>
+        <div className="flex gap-4">
+          <Modal>Test Modal</Modal>
+          <Modal
+            variant="primary"
+            shadow="md"
+            className="hover:shadow-xl transition-all duration-300"
+          >
+            Test Modal with Variants
+          </Modal>
+          <Modal>
+            <Modal.Header>
+              <Modal.Title>Test Modal with Structure</Modal.Title>
+            </Modal.Header>
+          </Modal>
+        </div>
       </div>
     </div>
   );
