@@ -71,4 +71,10 @@ Modal.Title = ({ children, className = "", ...props }) => (
   </h3>
 );
 
+Modal.Body = ({ children, className = "", ...props }) => (
+  <div className={className} {...props}>
+    {children}
+  </div>
+);
+
 export default Modal;
