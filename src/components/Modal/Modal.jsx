@@ -77,4 +77,10 @@ Modal.Body = ({ children, className = "", ...props }) => (
   </div>
 );
 
+Modal.Footer = ({ children, className = "", ...props }) => (
+  <div className={`border-t border-gray-200 pt-4 mt-4 ${className}`} {...props}>
+    {children}
+  </div>
+);
+
 export default Modal;

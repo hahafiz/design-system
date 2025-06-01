@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Modal from "./Modal.jsx";
+import Button from "../Button/Button.jsx";
 
 const ModalDemo = (props) => {
   return (
@@ -22,6 +23,12 @@ const ModalDemo = (props) => {
             <Modal.Header>
               <Modal.Title>Test Modal with Structure</Modal.Title>
             </Modal.Header>
+            <Modal.Body>
+              <p>This is modal modal with structure</p>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button size="sm">Submit</Button>
+            </Modal.Footer>
           </Modal>
         </div>
       </div>
