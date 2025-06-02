@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 const Modal = ({
   children,
+  size = "sm",
   variant = "default",
   shadow = "none",
   className = "",
@@ -10,6 +11,14 @@ const Modal = ({
 }) => {
   // base styling
   const baseClasses = "rounded-sm border border-gray-200 p-4 shadow-lg";
+
+  // size styling
+  const sizeClasses = {
+    sm: "w-80",
+    md: "w-96",
+    lg: "w-112",
+    xl: "w-128",
+  };
 
   // variant styling
   const variantClasses = {
@@ -33,6 +42,7 @@ const Modal = ({
   // combine all classes
   const modalClasses = [
     baseClasses,
+    sizeClasses[size],
     variantClasses[variant],
     shadowClasses[shadow],
     className,

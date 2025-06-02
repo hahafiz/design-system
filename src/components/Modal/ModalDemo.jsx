@@ -19,15 +19,18 @@ const ModalDemo = (props) => {
           >
             Test Modal with Variants
           </Modal>
-          <Modal>
+          <Modal size="lg">
             <Modal.Header>
               <Modal.Title>Test Modal with Structure</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <p>This is modal modal with structure</p>
             </Modal.Body>
-            <Modal.Footer>
+            <Modal.Footer className="flex justify-end gap-2">
               <Button size="sm">Submit</Button>
+              <Button variant="outline" size="sm">
+                Cancel
+              </Button>
             </Modal.Footer>
           </Modal>
         </div>
